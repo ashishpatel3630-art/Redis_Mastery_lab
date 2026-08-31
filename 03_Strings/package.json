@@ -1,0 +1,12 @@
+{
+    "name":"03_strings_Redis",
+    "version":"1.0.0",
+    "type":"module",
+    "scripts": {
+        "dev":"node --watch src/index.js"
+    },
+    "dependencies": {
+        "express":"^4.18.3",
+        "ioredis":"^5.4.1"
+    }
+}
