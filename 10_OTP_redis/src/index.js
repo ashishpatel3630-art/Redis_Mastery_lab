@@ -77,6 +77,6 @@ app.get("/otp/:phone/ttl", async (req, res) => {
   });
 });
 
-app.listen(3008, () => {
-  console.log("OTP project running on 3008");
+app.listen(3000, () => {
+  console.log("OTP project running on http://localhost:3000");
 });
