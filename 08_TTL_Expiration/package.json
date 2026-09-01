@@ -1,0 +1,16 @@
+{
+    "name":"TTL_Expiration",
+    "version":"1.0.0",
+    "type":"module",
+    "author":{"name":"ashish patel"},
+    "private":true,
+    "scripts": {
+        "dev":"node --watch src/index.js"
+        
+    },
+        "dependencies": {
+            "express":"^4.18.3",
+            "ioredis":"^5.4.1"
+        }
+    
+}
