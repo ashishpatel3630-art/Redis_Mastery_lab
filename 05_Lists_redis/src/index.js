@@ -29,5 +29,22 @@ app.get("/tasks" , async(req , res)=>{
     res.json({
         tasks:tasks.map(task => JSON.parse(task))
     });
-    
+
 });
+
+app.post("/tasks/process" , async(req , res )=>{
+    const task = await redis.lpop(LIST_KEY);
+    if(!task){
+        return res.status({
+            message:"No tasks in the queue"
+        });
+    }
+    res.json({
+        message:"task processed" ,
+        task:JSON.parse(task)
+    });
+});
+
+app.listen(3000 ,()=>{
+    console.log("server is running on port http://localhost:3000");
+})

@@ -1,0 +1,15 @@
+{
+    "name": "05_lists_redis",
+    "version": "1.0.0",
+    "description": "A simple Node.js application that demonstrates the use of Redis lists.",
+    "main": "index.js",
+    "scripts": {
+          "dev":"node --watch src/index.js"
+    },
+    "dependencies": {
+       "ioredis":"^5.4.1",
+        "Express":"^4.18.3"
+    },
+    "author": "ashish",
+    "license": "OCT"
+}
