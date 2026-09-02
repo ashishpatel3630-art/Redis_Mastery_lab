@@ -4,6 +4,7 @@
     "type":"module",
     "author":{"name":"ashish patel"},
     "private":true,
+    "port": "-6379:6379",
     "scripts": {
         "dev":"node --watch src/index.js"
         
