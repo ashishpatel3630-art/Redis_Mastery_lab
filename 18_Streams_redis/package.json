@@ -1,0 +1,18 @@
+{
+    "name":"locking-redis",
+    "version": "1.0.0",
+    "description": "A simple lua scripts redis script",
+    "private": true,
+    "type": "module",
+    "author": {
+        "name": "ashish patel",
+        "email": "ashishpatel3630@gmail.com"
+    },
+    "scripts": {
+        "dev":"node --watch src/index.js"
+    },
+    "dependencies": {
+        "express":"^4.18.2",
+        "ioredis":"^5.4.1"
+    }
+}
